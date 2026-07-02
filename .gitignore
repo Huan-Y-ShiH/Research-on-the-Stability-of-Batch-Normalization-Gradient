@@ -19,7 +19,7 @@ __pycache__/
 *.pyo
 
 # ===== 数据（太大，不传） =====
-data/
+/data/
 cifar-10-batches-py/
 
 # ===== 旧版output =====
