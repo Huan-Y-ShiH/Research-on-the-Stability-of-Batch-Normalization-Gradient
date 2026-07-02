@@ -1,0 +1,9 @@
+# PyTorch (CUDA版) — pip会自动安装对应CUDA版本
+# 如果pip安装的是CPU版，手动指定:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+scikit-learn>=1.2.0

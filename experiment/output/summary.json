@@ -1,0 +1,126 @@
+{
+  "device": "cuda",
+  "gpu": true,
+  "gpu_name": "Tesla T4",
+  "total_runs": 60,
+  "scenarios": 4,
+  "total_time_seconds": 5400.544183254242,
+  "results_by_scenario": {
+    "CIFAR-10+simple_cnn": {
+      "NoBN": {
+        "accuracy": 0.5733600000000001,
+        "accuracy_std": 0.005842465233101533,
+        "gradient_stability": 2.8100649952230577e-05,
+        "gradient_stability_std": 3.2013255354828894e-06,
+        "layer_cv": 0.1884358461640476,
+        "cross_layer_ratio": 1.623840316493819,
+        "convergence_epoch": 25.4
+      },
+      "BN_pre": {
+        "accuracy": 0.66056,
+        "accuracy_std": 0.0035741292645902,
+        "gradient_stability": 3.1864991822859416e-05,
+        "gradient_stability_std": 3.0462354678389783e-06,
+        "layer_cv": 0.21930865582533837,
+        "cross_layer_ratio": 1.9946804867806978,
+        "convergence_epoch": 21.0
+      },
+      "BN_post": {
+        "accuracy": 0.6512800000000001,
+        "accuracy_std": 0.0037107411658589113,
+        "gradient_stability": 1.4954924229304062e-05,
+        "gradient_stability_std": 1.6245225058128978e-06,
+        "layer_cv": 0.32632427041009704,
+        "cross_layer_ratio": 3.1353977979122507,
+        "convergence_epoch": 12.6
+      }
+    },
+    "CIFAR-10+resnet18": {
+      "NoBN": {
+        "accuracy": 0.6373599999999999,
+        "accuracy_std": 0.014405776619120538,
+        "gradient_stability": 3.592796341000692e-05,
+        "gradient_stability_std": 5.534430582551102e-06,
+        "layer_cv": 0.3558466650706128,
+        "cross_layer_ratio": 3.283846200383528,
+        "convergence_epoch": 25.6
+      },
+      "BN_pre": {
+        "accuracy": 0.6889600000000001,
+        "accuracy_std": 0.009208170285132676,
+        "gradient_stability": 2.631709548955106e-05,
+        "gradient_stability_std": 1.25135644035676e-06,
+        "layer_cv": 0.25286921970365217,
+        "cross_layer_ratio": 2.1953367030360846,
+        "convergence_epoch": 15.4
+      },
+      "BN_post": {
+        "accuracy": 0.6852799999999999,
+        "accuracy_std": 0.006398249760676725,
+        "gradient_stability": 2.3486362235117866e-05,
+        "gradient_stability_std": 1.0267650979753794e-06,
+        "layer_cv": 0.2917252239932167,
+        "cross_layer_ratio": 2.3725052464479193,
+        "convergence_epoch": 10.6
+      }
+    },
+    "SVHN+simple_cnn": {
+      "NoBN": {
+        "accuracy": 0.30312,
+        "accuracy_std": 0.0036124230095602025,
+        "gradient_stability": 1.2783733232537984e-05,
+        "gradient_stability_std": 2.060845832317379e-06,
+        "layer_cv": 0.24673934958146804,
+        "cross_layer_ratio": 2.104284490216126,
+        "convergence_epoch": 23.0
+      },
+      "BN_pre": {
+        "accuracy": 0.6369999999999999,
+        "accuracy_std": 0.005317142089506368,
+        "gradient_stability": 5.5718457629542724e-05,
+        "gradient_stability_std": 2.8876608549972182e-06,
+        "layer_cv": 0.15187555680432413,
+        "cross_layer_ratio": 1.5253796682094973,
+        "convergence_epoch": 28.0
+      },
+      "BN_post": {
+        "accuracy": 0.77912,
+        "accuracy_std": 0.004015171229225493,
+        "gradient_stability": 2.0911887461522683e-05,
+        "gradient_stability_std": 2.584001026697828e-06,
+        "layer_cv": 0.3794768360949547,
+        "cross_layer_ratio": 4.366567106623435,
+        "convergence_epoch": 21.2
+      }
+    },
+    "SVHN+resnet18": {
+      "NoBN": {
+        "accuracy": 0.37336,
+        "accuracy_std": 0.08083468562442732,
+        "gradient_stability": 1.6251153022377353e-05,
+        "gradient_stability_std": 2.80402270711435e-06,
+        "layer_cv": 0.4194014467448276,
+        "cross_layer_ratio": 4.056650991960129,
+        "convergence_epoch": 29.2
+      },
+      "BN_pre": {
+        "accuracy": 0.90108,
+        "accuracy_std": 0.0015104966070799595,
+        "gradient_stability": 3.5670899514645335e-05,
+        "gradient_stability_std": 3.5399436941921313e-06,
+        "layer_cv": 0.315653180095096,
+        "cross_layer_ratio": 2.518494495707098,
+        "convergence_epoch": 11.4
+      },
+      "BN_post": {
+        "accuracy": 0.9077200000000001,
+        "accuracy_std": 0.0030921836944140585,
+        "gradient_stability": 3.099871903664725e-05,
+        "gradient_stability_std": 8.855446117138901e-07,
+        "layer_cv": 0.3500940970141021,
+        "cross_layer_ratio": 2.8898114446469285,
+        "convergence_epoch": 7.6
+      }
+    }
+  }
+}
